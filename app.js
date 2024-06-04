@@ -19,6 +19,10 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+router.get('/' , (req,res) => {
+    res.send('Welcome to the email sender API')
+})
+
 // API send mail
 router.post("/send/mail", async (req, res, next) => {
   const { name, email, message } = req.body;
