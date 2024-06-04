@@ -10,7 +10,7 @@ config({ path: "./config.env" });
 
 app.use(
   cors({
-    origin: "https://gym-frontend-brown.vercel.app/",
+    origin: "https://gym-backend-o4pz.onrender.com/",
     methods: ["POST"],
     credentials: true,
   })
